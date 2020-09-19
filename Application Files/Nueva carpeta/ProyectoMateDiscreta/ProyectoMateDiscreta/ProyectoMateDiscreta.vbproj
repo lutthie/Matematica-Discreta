@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B5C3407-7267-49C3-A5C2-FD51EDC8043A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProyectoMateDiscreta.My.MyApplication</StartupObject>
+    <RootNamespace>ProyectoMateDiscreta</RootNamespace>
+    <AssemblyName>ProyectoMateDiscreta</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProyectoMateDiscreta.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProyectoMateDiscreta.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="combinaciones.Designer.vb">
+      <DependentUpon>combinaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="combinaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="combiperm.Designer.vb">
+      <DependentUpon>combiperm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="combiperm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="combivolver.Designer.vb">
+      <DependentUpon>combivolver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="combivolver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comvolver.Designer.vb">
+      <DependentUpon>comvolver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="comvolver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conjuntos.Designer.vb">
+      <DependentUpon>conjuntos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="conjuntos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="covolver.Designer.vb">
+      <DependentUpon>covolver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="covolver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errorcombi.Designer.vb">
+      <DependentUpon>errorcombi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errorcombi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errorperm.Designer.vb">
+      <DependentUpon>errorperm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errorperm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="factorial.Designer.vb">
+      <DependentUpon>factorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="factorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="favolver.Designer.vb">
+      <DependentUpon>favolver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="favolver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fibonacci.Designer.vb">
+      <DependentUpon>fibonacci.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fibonacci.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fivolver.Designer.vb">
+      <DependentUpon>fivolver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fivolver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.vb">
+      <DependentUpon>Loading.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mcdmcm.Designer.vb">
+      <DependentUpon>mcdmcm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mcdmcm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mcvolver.Designer.vb">
+      <DependentUpon>mcvolver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mcvolver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menuprin.Designer.vb">
+      <DependentUpon>Menuprin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menuprin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messagemenu.Designer.vb">
+      <DependentUpon>messagemenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="messagemenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="noprimos.Designer.vb">
+      <DependentUpon>noprimos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="noprimos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="novolver.Designer.vb">
+      <DependentUpon>novolver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="novolver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="permutaciones.Designer.vb">
+      <DependentUpon>permutaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="permutaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pervolver.Designer.vb">
+      <DependentUpon>pervolver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pervolver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recursividad.Designer.vb">
+      <DependentUpon>recursividad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="recursividad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="revolver.Designer.vb">
+      <DependentUpon>revolver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="revolver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tcombinacion.Designer.vb">
+      <DependentUpon>tcombinacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tcombinacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teoria.Designer.vb">
+      <DependentUpon>teoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="teoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tevolver.Designer.vb">
+      <DependentUpon>tevolver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tevolver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tfactorial.Designer.vb">
+      <DependentUpon>tfactorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tfactorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tfibonacci.Designer.vb">
+      <DependentUpon>tfibonacci.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tfibonacci.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tinterseccion.Designer.vb">
+      <DependentUpon>tinterseccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tinterseccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tmcd.Designer.vb">
+      <DependentUpon>tmcd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tmcd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tmcm.Designer.vb">
+      <DependentUpon>tmcm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tmcm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tnoprimos.Designer.vb">
+      <DependentUpon>tnoprimos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tnoprimos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tpermutacion.Designer.vb">
+      <DependentUpon>tpermutacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tpermutacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tunion.Designer.vb">
+      <DependentUpon>tunion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tunion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="combinaciones.resx">
+      <DependentUpon>combinaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="combiperm.resx">
+      <DependentUpon>combiperm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="combivolver.resx">
+      <DependentUpon>combivolver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="comvolver.resx">
+      <DependentUpon>comvolver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conjuntos.resx">
+      <DependentUpon>conjuntos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="covolver.resx">
+      <DependentUpon>covolver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errorcombi.resx">
+      <DependentUpon>errorcombi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errorperm.resx">
+      <DependentUpon>errorperm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factorial.resx">
+      <DependentUpon>factorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="favolver.resx">
+      <DependentUpon>favolver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fibonacci.resx">
+      <DependentUpon>fibonacci.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fivolver.resx">
+      <DependentUpon>fivolver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mcdmcm.resx">
+      <DependentUpon>mcdmcm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mcvolver.resx">
+      <DependentUpon>mcvolver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menuprin.resx">
+      <DependentUpon>Menuprin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messagemenu.resx">
+      <DependentUpon>messagemenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noprimos.resx">
+      <DependentUpon>noprimos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="novolver.resx">
+      <DependentUpon>novolver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="permutaciones.resx">
+      <DependentUpon>permutaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pervolver.resx">
+      <DependentUpon>pervolver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recursividad.resx">
+      <DependentUpon>recursividad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="revolver.resx">
+      <DependentUpon>revolver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tcombinacion.resx">
+      <DependentUpon>tcombinacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teoria.resx">
+      <DependentUpon>teoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tevolver.resx">
+      <DependentUpon>tevolver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tfactorial.resx">
+      <DependentUpon>tfactorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tfibonacci.resx">
+      <DependentUpon>tfibonacci.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tinterseccion.resx">
+      <DependentUpon>tinterseccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tmcd.resx">
+      <DependentUpon>tmcd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tmcm.resx">
+      <DependentUpon>tmcm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tnoprimos.resx">
+      <DependentUpon>tnoprimos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tpermutacion.resx">
+      <DependentUpon>tpermutacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tunion.resx">
+      <DependentUpon>tunion.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logotipo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bye.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cry.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factorial.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fibonacci.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuinicial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noprimos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recursivdad.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Messagebox.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volver.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\version.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lluvia de hojas.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teoria.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu principal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numeros primos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conjuntos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conjuntosgif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mcd y mcm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mcdmcm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu recursividad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fibonacci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factorial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cry2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerebro con lentes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teoriavolver.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calcular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numeros-primos-del-2-al-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\280px-PolygonsSetIntersection.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\280px-PolygonsSetUnion.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formulas_combinaciones_09.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220px-Permutación_de_1,2,3.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mcm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mcd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factorial1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\combinaciones y permutaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\combiper.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permutaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\combinaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\combi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permutaci.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
